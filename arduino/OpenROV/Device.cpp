@@ -99,7 +99,10 @@ void OutputSharedData(){
     Serial.print(F("temp:"));
     Serial.print(envdata::TEMP);
     Serial.println(';'); 
- 
+   Serial.print(F("rad:")); // radiation in uSv/h
+    Serial.print(envdata::RAD);
+    Serial.println(';'); 
+    
     Serial.print(F("dlms:")); //device loop time in ms
     for(int i=0;i<DeviceManager::device_count;i++){
       Serial.print(i);
@@ -124,6 +127,7 @@ float navdata::YAW = 0;
 
 float envdata::PRES = 0;
 float envdata::TEMP = 0;
+float envdata::RAD = 0;
 
 double capedata::FMEM = 0;
 double capedata::VOUT = 0;

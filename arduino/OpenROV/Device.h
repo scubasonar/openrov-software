@@ -13,7 +13,7 @@
 #define COMPASS_CAPABLE 4
 #define ORIENTATION_CAPABLE 5
 #define DEAPTH_CAPABLE 6
-
+#define RADIATION_CAPABLE 7
 
 
 #define MAX_DEVICES 10
@@ -37,6 +37,7 @@ class envdata{
   public:
     static float PRES; //Pressure in millibars
     static float TEMP; //Temperature in C
+    static float RAD; // Radiation in uSv/h
 };
 
 class capedata{

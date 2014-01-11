@@ -53,6 +53,10 @@ Settings settings;
   MinIMU9 IMU;
 #endif
 
+#if(HAS_GEIGER_COUNTER)
+  #define GEIGER_ENABLED 1
+  GeigerCounter geiger;
+#endif
 
 Command cmd;
 
